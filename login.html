@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body,
+        html {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(247, 243, 243, 0.37);
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+        }
+
+        .left {
+            display: flex;
+            height: 100%;
+            width: 55%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right {
+            width: 45%;
+            height: 100%;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+        }
+
+        .form-container .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-container form input {
+            padding: 10px;
+            border: 1px solid #b3c3d3;
+            border-radius: 5px;
+        }
+
+        .form-container form .remember-me {
+            display: flex;
+            align-items: center;
+        }
+
+        .form-container form .remember-me input {
+            margin-right: 5px;
+        }
+
+        .form-container form .link {
+            text-align: right;
+        }
+
+        .form-container form .link a {
+            color: #7085e5;
+            text-decoration: none;
+        }
+
+        .form-container form .link a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container form button {
+            padding: 10px;
+            border: none;
+            background-color: #7085e5;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container form button:hover {
+            background-color: #8070d0;
+        }
+
+        .svg-container {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .logo-svg {
+            filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+        }
+
+        .logo-svg.no-transition {
+            animation: none;
+        }
+
+        .logo-svg.with-transition {
+            animation: fadeIn 2s ease-out forwards;
+        }
+
+        .login-options {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .right {
+                display: block;
+            }
+
+            .right img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .right {
+                display: none;
+            }
+
+            .left {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="form-container">
+                <div class="logo">
+                    <!-- SVG logo -->
+                    <div class="svg-container">
+                        <svg class="logo-svg with-transition" width="90%" height="90%" viewBox="0 0 200 200"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="gradient" x1="40%" y1="40%" x2="100%" y2="60%">
+                                    <stop offset="0%" style="stop-color: #7085e5; stop-opacity: 1;" />
+                                    <stop offset="100%" style="stop-color: #ff9Fff; stop-opacity: 1;" />
+                                </linearGradient>
+                            </defs>
+                            <polyline points="30,100 70,160 170,40" fill="none" stroke="url(#gradient)"
+                                stroke-width="30" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <form onsubmit="handleSubmit(event)">
+                    <input type="email" id="email-address" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <div class="login-options">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <label for="remember-me"><small>Remember me</small></label>
+                        </div>
+                        <div class="link">
+                            <a href="/">
+                                <small>Having Trouble?</small>
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <img src="https://source.unsplash.com/random/?random" alt="Random images">
+        </div>
+    </div>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+
+</html>

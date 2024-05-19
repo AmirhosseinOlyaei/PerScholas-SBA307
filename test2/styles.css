@@ -1,0 +1,105 @@
+/* Reset and base styles */
+/* ... */
+
+/* Header styles */
+header {
+    background-color: #1a4d2e;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #2e7d4a;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+    animation: hero-fade-in 1s ease-out;
+}
+
+@keyframes hero-fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Featured adventures section styles */
+.featured-adventures {
+    padding: 2rem;
+}
+
+.adventure-card {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.adventure-card:hover {
+    transform: scale(1.05);
+}
+
+.adventure-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}

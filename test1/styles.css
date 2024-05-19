@@ -1,0 +1,63 @@
+/* External CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* CSS Selectors */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Flexbox */
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fadeIn 2s ease-in;
+}
