@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,13 +9,13 @@ body {
     min-height: 100vh;
 }
 
-/* Flexbox for Layout */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Keep the footer at the bottom of the screen if content in the main is little. */
 .wrapper {
     flex: 1;
 }
@@ -24,7 +25,6 @@ section {
     margin: 20px 0;
 }
 
-/* Internal Styles */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -49,14 +49,11 @@ select {
     margin-bottom: 10px;
 }
 
-/* Inline Styles */
 h2 {
     color: #333;
 }
 
-/* Navbar styles */
 .navbar {
-    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -172,7 +169,7 @@ a:hover {
         padding: 5px;
     }
 
-    /* hiding all the <a> elements that are direct children. And doesn't affect grand children, in menu dropdown. */
+    /* hiding all the <a> elements that are direct children. And doesn't affect grand children <a> tags, in menu dropdown. */
     .navLinks>a {
         display: none;
     }
@@ -213,3 +210,15 @@ a:hover {
         font-size: 3vw;
     }
 }
+
+/* 
+640
+800
+1024
+1280 (and larger)
+-
+20em
+64em
+90em
+120em
+*/
