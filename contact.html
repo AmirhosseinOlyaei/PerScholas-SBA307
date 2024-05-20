@@ -45,33 +45,40 @@
         </nav>
     </header>
     <main class="content">
-        <section>
+        <section class="contact-form">
             <h2>Get in Touch</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send" class="submit-button">
             </form>
         </section>
-
-        <section>
+        <section class="feedback-form">
+            <h2>Feedback & Rating</h2>
+            <form action="#">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback"></textarea>
+                <label for="rating">Rate my site:</label>
+                <select id="rating" name="rating">
+                    <option value="5">5</option>
+                    <option value="4">4</option>
+                    <option value="3">3</option>
+                    <option value="2">2</option>
+                    <option value="1">1</option>
+                </select>
+                <input type="submit" value="Submit" class="submit-button">
+            </form>
+        </section>
+        <section class="newsletter-form">
             <h2>Subscribe to our Newsletter</h2>
-            <form>
-                <div class="form-group">
-                    <label for="newsletter">Email:</label>
-                    <input type="email" id="newsletter" name="newsletter" required>
-                </div>
-                <button type="submit" class="btn">Subscribe</button>
+            <form action="#">
+                <label for="newsletter">Email:</label>
+                <input type="email" id="newsletter" name="newsletter" required>
+                <button type="submit" class="submit-button">Subscribe</button>
             </form>
         </section>
     </main>
