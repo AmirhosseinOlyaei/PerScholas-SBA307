@@ -25,33 +25,101 @@
 </head>
 
 <body>
-    <h1>Todo List</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Task Name</th>
-                <th>Description</th>
-                <th>Done</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Find a project</td>
-                <td>Offer my help and join a team to work on a real world project.</td>
-                <td style="text-align: center;"><input type="checkbox" checked /></td>
-            </tr>
-            <tr>
-                <td>Harvest Haven</td>
-                <td>It is a Next.js/TS MongoDB application that provides an online farmers market to customer. </td>
-                <td style="text-align: center;"><input type="checkbox" checked /></td>
-            </tr>
-            <tr>
-                <td>Stand-up</td>
-                <td>Initial overview of product requirements, design system</td>
-                <td style="text-align: center;"><input type="checkbox" style="vertical-align: middle;" checked /></td>
-            </tr>
-        </tbody>
-    </table>
+
+</body>
+
+</html>
+
+
+
+
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Minder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navLinks">
+                <div class="svg-container">
+                    <svg class="logo-svg with-transition" width="90%" height="90%" viewBox="0 0 200 200"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="gradient" x1="40%" y1="40%" x2="100%" y2="60%">
+                                <stop offset="0%" style="stop-color: #7085e5; stop-opacity: 1;" />
+                                <stop offset="100%" style="stop-color: #ff9Fff; stop-opacity: 1;" />
+                            </linearGradient>
+                        </defs>
+                        <polyline points="30,100 70,160 170,40" fill="none" stroke="url(#gradient)" stroke-width="30"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <span class="navTitle">Task Minder</span>
+            </div>
+            <div class="navLinks">
+                <a href="/index.html" class="button">Home</a>
+                <a href="/resume-test2.html" class="button">Resume</a>
+                <a href="/contact.html" class="button">Contact</a>
+                <a href="/login.html" class="button">Log out</a>
+                <div class="dropdown">
+                    <a class="ctaButton">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="/index.html">Home</a>
+                        <a href="/contact.html">Contact</a>
+                        <a href="/login.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content">
+        <h1>Todo List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Description</th>
+                    <th>Done</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Find a project</td>
+                    <td>Offer my help and join a team to work on a real world project.</td>
+                    <td style="text-align: center;"><input type="checkbox" checked /></td>
+                </tr>
+                <tr>
+                    <td>Harvest Haven</td>
+                    <td>It is a Next.js/TS MongoDB application that provides an online farmers market to customer. </td>
+                    <td style="text-align: center;"><input type="checkbox" checked /></td>
+                </tr>
+                <tr>
+                    <td>Stand-up</td>
+                    <td>Initial overview of product requirements, design system</td>
+                    <td style="text-align: center;"><input type="checkbox" style="vertical-align: middle;" checked />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Task Minder</p>
+        <p>Made with ❤️ by Per Scholas students.</p>
+        <p>
+            Contact us at
+            <a
+                href="https://devarts.notion.site/devarts/61c6b79808ce476290c753165851b070?v=9d442848a814451fba7a2e1b99bebb9b">
+                DevArts
+            </a>
+        </p>
+    </footer>
 </body>
 
 </html>
