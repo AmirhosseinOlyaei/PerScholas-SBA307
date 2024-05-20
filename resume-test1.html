@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="div">
+        <div class="div-2">
+            <div class="div-3">
+                <div class="column">
+                    <div class="div-4">
+                        <div class="div-5">
+                            <div class="column-2">
+                                <img loading="lazy" srcset="..." class="img" />
+                            </div>
+                            <div class="column-3">
+                                <div class="div-6">
+                                    <div class="div-7">amir olyaei</div>
+                                    <div class="div-8">Web Designer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-4">
+                    <div class="div-9">
+                        <div class="div-10">
+                            Name:
+                            <br />
+                            Date of birth:
+                            <br />
+                            Address:
+                            <br />
+                            Phone:
+                            <br />
+                            Email:
+                            <br />
+                            Website:
+                        </div>
+                        <div class="div-11">
+                            Amir Olyaei:
+                            <br />
+                            Dec 25, 1983
+                            <br />
+                            Boston, MA 02110, USA
+                            <br />
+                            +1 (617) 600-8060
+                            <br />
+                            example@gmail.com
+                            <br />
+                            <span style="color: rgba(100, 137, 172, 1)">
+                                https://example.com/
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div-12">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+        </div>
+    </div>
+    <style>
+        .div {
+            background-color: #282828;
+            display: flex;
+            flex-direction: column;
+            padding: 43px 43px 73px;
+        }
+
+        @media (max-width: 991px) {
+            .div {
+                padding: 0 20px;
+            }
+        }
+
+        .div-2 {}
+
+        @media (max-width: 991px) {
+            .div-2 {
+                max-width: 100%;
+            }
+        }
+
+        .div-3 {
+            gap: 20px;
+            display: flex;
+        }
+
+        @media (max-width: 991px) {
+            .div-3 {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0px;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 61%;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 991px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .div-4 {
+            flex-grow: 1;
+        }
+
+        @media (max-width: 991px) {
+            .div-4 {
+                max-width: 100%;
+                margin-top: 40px;
+            }
+        }
+
+        .div-5 {
+            gap: 20px;
+            display: flex;
+        }
+
+        @media (max-width: 991px) {
+            .div-5 {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0px;
+            }
+        }
+
+        .column-2 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 35%;
+            margin-left: 0px;
+        }
+
+        @media (max-width: 991px) {
+            .column-2 {
+                width: 100%;
+            }
+        }
+
+        .img {
+            aspect-ratio: 1;
+            object-fit: auto;
+            object-position: center;
+            width: 170px;
+            border-color: rgba(51, 51, 51, 1);
+            border-style: solid;
+            border-width: 4px;
+            max-width: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .img {
+                margin-top: 30px;
+            }
+        }
+
+        .column-3 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 65%;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .column-3 {
+                width: 100%;
+            }
+        }
+
+        .div-6 {
+            display: flex;
+            margin-top: 28px;
+            flex-direction: column;
+            font-weight: 700;
+        }
+
+        @media (max-width: 991px) {
+            .div-6 {
+                margin-top: 40px;
+            }
+        }
+
+        .div-7 {
+            color: #fff;
+            text-transform: uppercase;
+            font: 42px Inter, sans-serif;
+        }
+
+        .div-8 {
+            color: #71a5ca;
+            margin-top: 13px;
+            font: 25px Inter, sans-serif;
+        }
+
+        .column-4 {
+            display: flex;
+            flex-direction: column;
+            line-height: normal;
+            width: 39%;
+            margin-left: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .column-4 {
+                width: 100%;
+            }
+        }
+
+        .div-9 {
+            justify-content: center;
+            display: flex;
+            gap: 10px;
+            align-self: stretch;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            margin: auto 0;
+        }
+
+        @media (max-width: 991px) {
+            .div-9 {
+                margin-top: 40px;
+            }
+        }
+
+        .div-10 {
+            color: #fff;
+            text-align: right;
+            font-family: Inter, sans-serif;
+        }
+
+        .div-11 {
+            color: #6489ac;
+            font-family: Inter, sans-serif;
+            flex-grow: 1;
+            flex-basis: auto;
+        }
+
+        .div-12 {
+            justify-content: center;
+            margin-top: 40px;
+            color: #fff;
+            text-align: justify;
+            font: 700 18px/28px Inter, sans-serif;
+        }
+
+        @media (max-width: 991px) {
+            .div-12 {
+                max-width: 100%;
+            }
+        }
+    </style>
+
+
+
+</body>
+
+</html>
