@@ -73,6 +73,7 @@ To view the website:
 OR
 
 2. Clone the repository to your local machine. And open the `index.html` file in a web browser.
+   > https://github.com/AmirhosseinOlyaei/PerScholas-SBA307
 
 OR
 
