@@ -179,7 +179,7 @@ a:hover {
 }
 
 /* When the screen is less than 640 pixels wide, hide all links */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
     .navLinks {
         display: flex;
         align-items: center;
